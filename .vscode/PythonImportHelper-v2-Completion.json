@@ -432,7 +432,7 @@
         "kind": 5,
         "importPath": "label_box.settings",
         "description": "label_box.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'label_box.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default':dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}",
+        "peekOfCode": "WSGI_APPLICATION = 'label_box.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a.oregon-postgres.render.com/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}",
         "detail": "label_box.settings",
         "documentation": {}
     },
@@ -441,7 +441,7 @@
         "kind": 5,
         "importPath": "label_box.settings",
         "description": "label_box.settings",
-        "peekOfCode": "DATABASES = {\n    'default':dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
+        "peekOfCode": "DATABASES = {\n    'default': dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a.oregon-postgres.render.com/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
         "detail": "label_box.settings",
         "documentation": {}
     },

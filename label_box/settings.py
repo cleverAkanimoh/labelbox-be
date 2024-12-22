@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'label_box.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default':dj_database_url.config(
-        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a/labelbox_p8x9',
+    'default': dj_database_url.config(
+        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a.oregon-postgres.render.com/labelbox_p8x9',
         conn_max_age=600,
         ssl_require=True,
     )
