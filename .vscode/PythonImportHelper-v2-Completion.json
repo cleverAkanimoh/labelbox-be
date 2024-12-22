@@ -1,5 +1,38 @@
 [
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -21,14 +54,6 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -78,6 +103,15 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "dj_database_url",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dj_database_url",
+        "description": "dj_database_url",
+        "detail": "dj_database_url",
         "documentation": {}
     },
     {
@@ -202,6 +236,15 @@
         "description": "jmespath",
         "isExtraImport": true,
         "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "api.migrations.0001_initial",
+        "description": "api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='AnnotationProject',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255)),",
+        "detail": "api.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -353,61 +396,7 @@
         "kind": 5,
         "importPath": "label_box.settings",
         "description": "label_box.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:5173\",  # Vite frontend development URL\n    \"https://labelbox-fe.vercel.app\",  # Deployed frontend URL\n]\nINSTALLED_APPS += ['storages']\nAWS_ACCESS_KEY_ID = 'your-access-key-id'\nAWS_SECRET_ACCESS_KEY = 'your-secret-access-key'\nAWS_STORAGE_BUCKET_NAME = 'your-bucket-name'\nAWS_S3_REGION_NAME = 'your-region'\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "AWS_ACCESS_KEY_ID",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "AWS_ACCESS_KEY_ID = 'your-access-key-id'\nAWS_SECRET_ACCESS_KEY = 'your-secret-access-key'\nAWS_STORAGE_BUCKET_NAME = 'your-bucket-name'\nAWS_S3_REGION_NAME = 'your-region'\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nMEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "AWS_SECRET_ACCESS_KEY",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "AWS_SECRET_ACCESS_KEY = 'your-secret-access-key'\nAWS_STORAGE_BUCKET_NAME = 'your-bucket-name'\nAWS_S3_REGION_NAME = 'your-region'\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nMEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "AWS_STORAGE_BUCKET_NAME",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "AWS_STORAGE_BUCKET_NAME = 'your-bucket-name'\nAWS_S3_REGION_NAME = 'your-region'\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nMEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "AWS_S3_REGION_NAME",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "AWS_S3_REGION_NAME = 'your-region'\nDEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nMEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "DEFAULT_FILE_STORAGE",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'\nMEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',",
-        "detail": "label_box.settings",
-        "documentation": {}
-    },
-    {
-        "label": "MEDIA_URL",
-        "kind": 5,
-        "importPath": "label_box.settings",
-        "description": "label_box.settings",
-        "peekOfCode": "MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/'\nMIDDLEWARE = [\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"http://localhost:5173\",  # Vite frontend development URL\n    \"https://labelbox-fe.vercel.app\",  # Deployed frontend URL\n]\nINSTALLED_APPS += ['storages']\n# AWS_ACCESS_KEY_ID = 'your-access-key-id'\n# AWS_SECRET_ACCESS_KEY = 'your-secret-access-key'\n# AWS_STORAGE_BUCKET_NAME = 'your-bucket-name'\n# AWS_S3_REGION_NAME = 'your-region'\n# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'",
         "detail": "label_box.settings",
         "documentation": {}
     },
@@ -443,7 +432,7 @@
         "kind": 5,
         "importPath": "label_box.settings",
         "description": "label_box.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'label_box.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        # 'ENGINE': 'django.db.backends.sqlite3',\n        # 'NAME': BASE_DIR / 'db.sqlite3',\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'labelbox',\n        'USER': 'clever',",
+        "peekOfCode": "WSGI_APPLICATION = 'label_box.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default':dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}",
         "detail": "label_box.settings",
         "documentation": {}
     },
@@ -452,7 +441,7 @@
         "kind": 5,
         "importPath": "label_box.settings",
         "description": "label_box.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        # 'ENGINE': 'django.db.backends.sqlite3',\n        # 'NAME': BASE_DIR / 'db.sqlite3',\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'labelbox',\n        'USER': 'clever',\n        'PASSWORD': 'AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh',\n        'HOST': 'dpg-ctk8j92j1k6c73cn9h2g-a.cloudprovider.com',\n        'PORT': '5432' ,",
+        "peekOfCode": "DATABASES = {\n    'default':dj_database_url.config(\n        default='postgresql://clever:AhrlGTACEJQ83lYHmER1NDBOgdS4bOjh@dpg-ctk8j92j1k6c73cn9h2g-a/labelbox_p8x9',\n        conn_max_age=600,\n        ssl_require=True,\n    )\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [",
         "detail": "label_box.settings",
         "documentation": {}
     },
